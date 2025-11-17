@@ -1,9 +1,9 @@
 package com.example;
 
 public enum Speciality {
-    FRONT-END,
-    BACK-END,
-    FULL-STACK
+    FRONTEND,
+    BACKEND,
+    FULLSTACK,
     NETWORK,
     DEVOPS
 }

@@ -4,13 +4,13 @@ import java.time.LocalDateTime;
 public class GradeHistory {
     private double oldValue;
     private double newValue;
-    private LocalDateTime changeDateTime;
-    private String reason
+    private LocalDateTime timestamp;
+    private String reason;
 
-    public GradeHistory(double oldValue, double newValue, LocalDateTime changeDateTime, String reason) {
+    public GradeHistory(double oldValue, double newValue, LocalDateTime timestamp, String reason) {
         this.oldValue = oldValue;
         this.newValue = newValue;
-        this.changeDateTime = changeDateTime;
+        this.timestamp = timestamp;
         this.reason = reason;
     }
 

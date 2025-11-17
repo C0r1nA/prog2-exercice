@@ -15,8 +15,8 @@ public class Grade {
     }
 
     public double getValue() { return value; }
-    public Etudiant getStudent() { return student; }
-    public Exam getExam() { return exam; }
+    public Student getStudent() { return student; }
+    public Exams getExam() { return exam; }
     public List<GradeHistory> getHistory() { return history; }
 
     public void setValue(double newValue, String reason) {

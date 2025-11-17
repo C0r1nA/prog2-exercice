@@ -6,16 +6,15 @@ import javax.swing.GroupLayout.Group;
 
 public class Promotion {
     private String name;
-    private List<Group> groups;
+    private List<Group> group;
 
-    public Promotion(String name, List<Group> groups) {
+    public Promotion(String name, List<Group> group) {
         this.name = name;
-        this.groups = groups;
+        this.group = group;
     }
 
     public String getName() { return name; }
-    public List<Groupe> getGroupes() { return groupes; }
-
+    public List<Group> getGroup() { return group; }
     public void setName(String name) { this.name = name; }
-    public void setGroupes(List<Groupe> groupes) { this.groupes = groupes; }
+    public void setGroup(List<Group> group) { this.group = group; }
 }

@@ -10,10 +10,10 @@ public class Student extends Person {
         this.tutor = tutor;
     }
 
-    public String getGroup() { return group; }
-    public Tutot getTutor() { return tutor; }
+    public Group getGroup() { return group; }
+    public Tutor getTutor() { return tutor; }
     public void setTutor(Tutor tutor) { this.tutor = tutor; }
-    public void setGroup(String group) { this.group = group; }  
+    public void setGroup(Group group) { this.group = group; }  
 
     
 } 

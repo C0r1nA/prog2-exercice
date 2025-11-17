@@ -1,12 +1,11 @@
 package com.example;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
 public class GradeCalcul {
     
-    public static double getExamGrade(Exam exam, Student student, LocalDateTime t, List<Grade> grades) {
+    public static double getExamGrade(Exams exam, Student student, LocalDateTime t, List<Grade> grades) {
         for (Grade g : grades) {
             if (g.getExam().equals(exam) && g.getStudent().equals(student)) {
                 double val = g.getValue();
@@ -23,12 +22,12 @@ public class GradeCalcul {
         return 0;
     }
 
-    public static double getCourseGrade(Subject subject, Student student, LocalDateTime t, List<Grade> grades, List<Exam> exams) {
+    public static double getCourseGrade(Subject subject, Student student, LocalDateTime t, List<Grade> grades, List<Exams> exams) {
         double sumWeighted = 0;
         int sumCoeffs = 0;
 
-        for (Exam exam : exams) {
-            if (exam.getCourse().equals(course)) {
+        for (Exams exam : exams) {
+            if (exam.getSubject().equals(subject)) {
                 double note = getExamGrade(exam, student, t, grades);
                 sumWeighted += note * exam.getCoefficient();
                 sumCoeffs += exam.getCoefficient();
